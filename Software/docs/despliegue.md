@@ -7,7 +7,7 @@ Un solo RDS. Nada de NAT Gateway, Multi-AZ, Aurora, QuickSight, OpenSearch, Elas
 
 ## 1. Base de datos (RDS for SQL Server Express)
 1. Crea una instancia RDS SQL Server **Express**, clase `db.t3.micro`, sin Multi-AZ, con almacenamiento mínimo y acceso público restringido a tu IP (o dentro de una VPC con la Lambda).
-2. Desde un cliente con `sqlcmd`, ejecuta en orden `Datos/01_oltp_create.sql`, `02_seed_oltp.sql`, `03_mart_create.sql`, `04_etl_procedures.sql`, `06_security.sql` (cambia antes las contraseñas) y `EXEC Mart_Bienestar.dbo.usp_ETL_Completo`.
+2. Desde un cliente con `sqlcmd`, ejecuta en orden `Datos/01_oltp_create.sql`, `02_seed_oltp.sql`, `03_mart_create.sql`, `04_etl_procedures.sql`, `04b_etl_app.sql`, `06_security.sql` (cambia antes las contraseñas) y `EXEC Mart_Bienestar.dbo.usp_ETL_Completo`.
 3. En RDS no existe el login `sa`: usa el usuario maestro. Si el motor rechaza `CREATE DATABASE` con rutas por defecto, deja las rutas del servicio.
 
 ## 2. API

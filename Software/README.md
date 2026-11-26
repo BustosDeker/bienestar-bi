@@ -84,7 +84,7 @@ Para apuntar a **RDS** basta cambiar `DB_HOST`, `DB_PORT`, `DB_ENCRYPT` y las co
 
 ```
 bienestar-bi/
-├─ Datos/        01_oltp_create · 02_seed_oltp (.py/.sql) · 03_mart_create · 04_etl_procedures · 05_kpi_queries · 06_security
+├─ Datos/        01_oltp_create · 02_seed_oltp (.py/.sql) · 03_mart_create · 04_etl_procedures · 04b_etl_app · 05_kpi_queries · 06_security
 ├─ Software/
 │  ├─ web/       React + Vite + TypeScript (PWA)
 │  ├─ api/       Hono + mssql + JWT (servidor local y adaptador Lambda en src/lambda.ts)
