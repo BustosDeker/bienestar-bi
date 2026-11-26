@@ -1,0 +1,35 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: bienestar-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${DB_SA_PASSWORD:-Bienestar#2026}
+    ports:
+      - "${DB_PORT:-14330}:1433"
+    volumes:
+      - sqldata:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q 'SELECT 1' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  db-init:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: bienestar-init
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SQLCMDPASSWORD: ${DB_SA_PASSWORD:-Bienestar#2026}
+    volumes:
+      - ../../Datos:/datos:ro
+      - ./init-db.sh:/init-db.sh:ro
+    user: root
+    entrypoint: ["/bin/bash", "/init-db.sh"]
+    restart: "no"
+
+volumes:
+  sqldata:

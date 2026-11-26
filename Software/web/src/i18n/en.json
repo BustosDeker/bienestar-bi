@@ -1,0 +1,446 @@
+{
+  "app": {
+    "name": "Wellbeing"
+  },
+  "nav": {
+    "main": "Main navigation",
+    "overview": "Overview",
+    "reports": "Reports",
+    "explorer": "Explorer",
+    "drivers": "Drivers",
+    "student": "My wellbeing",
+    "coach": "AI coach",
+    "etl": "ETL & quality",
+    "settings": "Settings",
+    "more": "More",
+    "collapse": "Collapse",
+    "expand": "Expand"
+  },
+  "common": {
+    "female": "Female",
+    "male": "Male",
+    "wave": "Wave",
+    "week": "Week",
+    "loading": "Loading",
+    "retry": "Retry",
+    "close": "Close",
+    "apply": "Apply",
+    "copy": "Copy",
+    "copied": "Copied to clipboard",
+    "export": "Export",
+    "remove": "Remove",
+    "skip": "Skip to content",
+    "noData": "No data for this selection",
+    "noDataHint": "Try removing a filter or lowering k in Settings.",
+    "back": "Back",
+    "next": "Next"
+  },
+  "error": {
+    "offline": "Could not reach the API. Check that the server is running."
+  },
+  "demo": {
+    "banner": "Demo mode: the API is not responding and saved sample data is shown (no filters)."
+  },
+  "estado": {
+    "bueno": "Good",
+    "regular": "Fair",
+    "malo": "Poor"
+  },
+  "filters": {
+    "title": "Filters",
+    "faculty": "Faculty",
+    "school": "School",
+    "sex": "Sex",
+    "age": "Age range",
+    "wave": "Wave",
+    "reset": "Clear",
+    "kHint": "Groups with fewer than {{k}} students are hidden"
+  },
+  "privacy": {
+    "suppressed": "Group with fewer than k students: value hidden for privacy",
+    "hint": "Lower k in Settings or broaden the selection to see this result."
+  },
+  "chart": {
+    "showTable": "Show data table",
+    "hideTable": "Hide table"
+  },
+  "palette": {
+    "title": "Command palette",
+    "placeholder": "Search page or action…",
+    "empty": "No results",
+    "go": "Go to",
+    "actions": "Actions",
+    "theme": "Toggle light/dark theme",
+    "lang": "Switch language ES/EN",
+    "shortcuts": "Keyboard shortcuts",
+    "search": "Search",
+    "focus": "Jump to search"
+  },
+  "overview": {
+    "greeting": "Executive summary",
+    "kpis": "Key indicators",
+    "evolution": "Evolution of life satisfaction (SWLS)",
+    "evolutionHint": "Average per measurement wave, with the traffic-light threshold lines.",
+    "findings": "Findings",
+    "noFindings": "No findings yet for this selection",
+    "heat": "Heat map: school × wave",
+    "heatHint": "Average SWLS; colour follows the KPI-01 traffic light.",
+    "bars": "Weekly meaningful hours by bond type",
+    "barsHint": "Hours per student rated 4 or 5.",
+    "recs": "AI recommendations",
+    "wave": {
+      "abierta": "Wave {{n}} open ({{from}} → {{to}}) · period {{period}}",
+      "proxima": "Next: wave {{n}} from {{from}} to {{to}} · period {{period}}",
+      "cerrada": "Latest wave: {{n}} · period {{period}}"
+    }
+  },
+  "findings": {
+    "kpiBad": "{{id}} ({{name}}) is red.",
+    "lowSchool": "{{school}} has the lowest SWLS ({{value}}, {{state}} level).",
+    "highSchool": "{{school}} has the highest SWLS ({{value}}, {{state}} level).",
+    "trend": "In {{school}}, SWLS changed {{delta}} between the first and last wave."
+  },
+  "kpi": {
+    "KPI-01": "Life satisfaction",
+    "KPI-02": "Meaningful social interaction",
+    "KPI-03": "Relationship quality",
+    "KPI-04": "Weekly physical activity",
+    "unit1": "pts (5–35)",
+    "unit2": "h/week",
+    "unit3": "of 5",
+    "unit4": "days/week",
+    "group": "Group",
+    "value": "Value",
+    "vsPrev": "vs. previous measure",
+    "target": "Target",
+    "sparkLabel": "Trend of {{id}}"
+  },
+  "reports": {
+    "subtitle": "The 7 management reports of the design, with real Data Mart data.",
+    "total": "Total",
+    "subtotal": "Faculty subtotal",
+    "totalWeekly": "Weekly total",
+    "blockRating": "Rating (1–5)",
+    "blockIntensity": "Minutes by intensity",
+    "cycle": "Cycle",
+    "validated": "Validated against the report design",
+    "validatedHint": "The structure (columns) is compared with the design, not the figures.",
+    "legend": "Traffic-light cells use the CONFIG_KPI thresholds. Totals are averages weighted by number of students. Click a row to highlight it.",
+    "r1": {
+      "short": "SWLS by school",
+      "title": "SWLS by school and age range",
+      "desc": "Average life satisfaction, with faculty subtotals and a grand total."
+    },
+    "r2": {
+      "short": "Hours by bond",
+      "title": "Meaningful hours by bond and modality × age range",
+      "desc": "Weekly hours per student rated 4 or 5; the last row adds up the weekly total."
+    },
+    "r3": {
+      "short": "Activity",
+      "title": "Days of physical activity and self-care × age range",
+      "desc": "Distinct days per week, counting 0 for weeks without activity."
+    },
+    "r4": {
+      "short": "Evolution",
+      "title": "SWLS evolution by wave",
+      "desc": "Average per wave, change versus the previous wave (LAG) and traffic-light status."
+    },
+    "r5": {
+      "short": "By sex",
+      "title": "Rating and intensity by sex",
+      "desc": "Interaction rating by bond and activity minutes by intensity."
+    },
+    "r6": {
+      "short": "Weekly",
+      "title": "Weekly tracking by month",
+      "desc": "Hours, rating and physical-activity days per week."
+    },
+    "r7": {
+      "short": "Cycle & income",
+      "title": "SWLS by study cycle and income range",
+      "desc": "Average satisfaction by cycle and income range (includes “Not reported”)."
+    }
+  },
+  "col": {
+    "Facultad": "Faculty",
+    "Escuela": "School",
+    "RangoEdad": "Age range",
+    "Estudiantes": "Students",
+    "OlaMedicion": "Wave",
+    "Variacion": "Change",
+    "Estado": "Status",
+    "Mes": "Month",
+    "Semana": "Week",
+    "InicioSemana": "Week start",
+    "HorasPorEstudiante": "Hours/student",
+    "Valoracion": "Rating",
+    "DiasActividadFisica": "Phys. activity days",
+    "Bloque": "Block",
+    "Grupo": "Group",
+    "TipoVinculo": "Bond",
+    "Modalidad": "Modality",
+    "TipoActividad": "Activity type",
+    "CicloEstudios": "Cycle"
+  },
+  "explorer": {
+    "subtitle": "Pick a measure, drag dimensions to rows and columns, apply slicers and click a chart to cross-filter.",
+    "fields": "Fields",
+    "measureLabel": "Measure",
+    "dimensions": "Dimensions (drag or use ↓ →)",
+    "rows": "Rows",
+    "cols": "Columns",
+    "dropHere": "Drop here",
+    "toRows": "To rows",
+    "toCols": "To columns",
+    "chartType": "Chart type",
+    "savedViews": "Saved views",
+    "slicers": "Slicers",
+    "addSlicer": "Add slicer",
+    "noSlicers": "No active slicers.",
+    "drillUp": "Drill up",
+    "drillDown": "Drill down",
+    "cross": "Cross-filter",
+    "noDeeper": "There is no deeper level in this hierarchy.",
+    "emptyTitle": "Drag a dimension to Rows or Columns",
+    "emptyHint": "Start with School in rows and Wave in columns.",
+    "clickHint": "Click a bar = cross-filter. Faculty→School and Year→Month→Week→Day let you drill down.",
+    "secondary": "Linked view by {{dim}}",
+    "warning": "Comparisons are descriptive: correlation is not causation.",
+    "share": "Copy link",
+    "save": "Save view",
+    "saveName": "View name",
+    "saved": "View saved in this browser",
+    "linkCopied": "Link copied: it reproduces this view",
+    "chart": {
+      "bar": "Bars",
+      "line": "Lines",
+      "heat": "Heat map",
+      "table": "Table"
+    },
+    "measure": {
+      "PuntajeSWLS": "SWLS score (average)",
+      "HorasSignificativas": "Meaningful hours per student and week",
+      "ValoracionInteraccion": "Interaction rating (1–5)",
+      "MinutosActividad": "Activity minutes per student and week",
+      "DiasActividad": "Activity days per student and week",
+      "VariacionPuntajeSWLS": "SWLS score change"
+    },
+    "dim": {
+      "Facultad": "Faculty",
+      "Escuela": "School",
+      "RangoEdad": "Age range",
+      "Sexo": "Sex",
+      "CicloEstudios": "Study cycle",
+      "RangoIngreso": "Income range",
+      "Anual": "Year",
+      "Mes": "Month",
+      "Semana": "Week",
+      "Dia": "Day",
+      "OlaMedicion": "Measurement wave",
+      "PeriodoAcademico": "Academic period",
+      "TipoVinculo": "Bond type",
+      "Modalidad": "Modality",
+      "TipoActividad": "Activity type",
+      "Intensidad": "Intensity",
+      "Actividad": "Activity",
+      "Bloque": "Block",
+      "Grupo": "Group"
+    }
+  },
+  "drivers": {
+    "title": "What drives wellbeing peaks?",
+    "subtitle": "Which bonds and activities are associated with higher life satisfaction. Descriptive analysis, not predictive.",
+    "warnTitle": "Association is not causation.",
+    "warn": "These results describe relationships between variables in this sample; they do not show that a bond or activity causes more wellbeing.",
+    "bonds": "Bonds",
+    "activities": "Activities",
+    "rankHint": "SWLS difference between students with more and less dedication.",
+    "group": "Group",
+    "diff": "Δ SWLS (high vs. low dedication)",
+    "rating": "Rating",
+    "hoursWeek": "Hours/week",
+    "minWeek": "Min/week",
+    "swlsChange": "Δ SWLS 1st→last wave",
+    "matrix": "Correlation matrix (Spearman)",
+    "matrixHint": "Spearman ρ at student level (n = {{n}}).",
+    "scatter": "Meaningful hours vs. SWLS",
+    "scatterHint": "Each dot is a student (not identified).",
+    "short": {
+      "HorasSignificativas": "Meaningful h",
+      "ValoracionInteraccion": "Rating",
+      "DiasActividad": "Activity days",
+      "MinutosActividad": "Activity min",
+      "PuntajeSWLS": "SWLS",
+      "VariacionPuntajeSWLS": "Δ SWLS"
+    }
+  },
+  "student": {
+    "title": "My wellbeing",
+    "subtitle": "Answer the survey, log interactions and activity, and compare your profile with the anonymous group average.",
+    "tab": {
+      "resumen": "Summary",
+      "encuesta": "SWLS survey",
+      "interaccion": "Interaction",
+      "actividad": "Activity",
+      "coach": "My coach"
+    },
+    "radar": "Your profile vs. the group",
+    "radarHint": "Each axis is the % of the “good” target of each indicator.",
+    "afterEtl": "Radar values update when the ETL runs.",
+    "you": "You",
+    "group": "Group (anonymous)",
+    "timeline": "Your timeline (SWLS)",
+    "streak_one": "Streak: {{count}} day",
+    "streak_other": "Streak: {{count}} days",
+    "lastDay": "Last day with activity: {{date}}",
+    "noActivity": "No activity logged yet",
+    "recent": "Recent records",
+    "noRecords": "No records yet",
+    "under10": "doesn't count: < 10 min",
+    "surveyTitle": "Satisfaction with Life Scale (SWLS)",
+    "pickWave": "Wave to answer",
+    "surveyDate": "Application date: {{date}} (wave {{n}})",
+    "step": "Question {{n}} of 5",
+    "disagree": "Strongly disagree",
+    "agree": "Strongly agree",
+    "submit": "Submit survey",
+    "mustAnswer": "Move the slider on every question before submitting.",
+    "surveyOk": "Survey saved: {{score}}/35 in wave {{n}}",
+    "allDone": "You already answered every wave",
+    "allDoneHint": "Pick another demo student to log a survey.",
+    "interTitle": "Quick interaction log",
+    "bond": "Bond",
+    "modality": "Modality",
+    "hours": "Duration (hours)",
+    "hoursErr": "Between 0 and 24 hours",
+    "rating": "Rating (1–5)",
+    "date": "Date",
+    "save": "Save",
+    "saved": "Record saved",
+    "savedShort": "Saved (does not count for the KPI: under 10 min)",
+    "interHint": "Only interactions rated 4 or 5 add meaningful hours.",
+    "actTitle": "Quick activity log",
+    "activity": "Activity",
+    "minutes": "Minutes",
+    "minutesErr": "Between 1 and 600 minutes",
+    "actHint": "Only activities of 10 minutes or more count.",
+    "coachTitle": "Your wellbeing coach",
+    "coachHint": "Interprets your personal indicators; it is not a diagnosis.",
+    "code": "Code"
+  },
+  "swls": {
+    "1": "In most ways my life is close to my ideal.",
+    "2": "The conditions of my life are excellent.",
+    "3": "I am satisfied with my life.",
+    "4": "So far I have gotten the important things I want in life.",
+    "5": "If I could live my life over, I would change almost nothing."
+  },
+  "coach": {
+    "title": "AI coach",
+    "subtitle": "The AI only interprets the indicator values and statuses and writes practical recommendations. It does not predict or diagnose.",
+    "inputs": "Indicators sent",
+    "inputsHint": "Only aggregated values and their status are sent; never personal data.",
+    "outputs": "Recommendations",
+    "interpret": "Interpret indicators",
+    "emptyTitle": "No recommendations yet",
+    "emptyHint": "Press “Interpret indicators” to generate them.",
+    "general": "General",
+    "source": "Source",
+    "rules": "Rules engine (local)",
+    "fallback": "Bedrock did not respond; the rules engine was used",
+    "disclaimer": "Indicative recommendations based on associations; they do not replace professional care. If you feel unwell, visit the student wellbeing office."
+  },
+  "etl": {
+    "title": "ETL and data quality centre",
+    "subtitle": "Run the OLTP → Data Mart load, review its audit trail and the quality rules.",
+    "run": "Run ETL",
+    "running": "Running…",
+    "lastRun": "Last run",
+    "noRun": "You have not run the ETL in this session",
+    "noRunHint": "Press “Run ETL”: dimensions load first, then facts.",
+    "ok": "ETL completed",
+    "fail": "The ETL finished with errors",
+    "dq": "Quality rules",
+    "dqHint": "Violations detected in the OLTP. Some are rejected when loading facts.",
+    "history": "History (AUDITORIA_ETL)",
+    "noHistory": "No runs recorded",
+    "lineage": "Lineage: OLTP → ETL → Data Mart",
+    "lineageHint": "Click a node to see where it comes from and where it goes.",
+    "views": "Views",
+    "from": "From",
+    "to": "To",
+    "upstream": "Fed from",
+    "downstream": "Feeds",
+    "col": {
+      "step": "Step",
+      "read": "Read",
+      "inserted": "Inserted",
+      "rejected": "Rejected",
+      "duration": "Duration",
+      "status": "Status",
+      "start": "Start"
+    }
+  },
+  "dq": {
+    "swls_5_respuestas": "SWLS surveys with all 5 answers",
+    "fecha_dentro_de_ola": "Survey date within a wave",
+    "valoracion_1_a_5": "Rating between 1 and 5",
+    "valor_swls_1_a_7": "SWLS answer between 1 and 7",
+    "duracion_interaccion_valida": "Valid interaction duration (0–24 h)",
+    "duracion_actividad_valida": "Valid activity duration (1–600 min)",
+    "actividad_minimo_10_min": "Activity of at least 10 minutes",
+    "interaccion_atipica_8h": "Atypical interactions (over 8 h)",
+    "ingreso_informado": "Income range reported"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Language, appearance, demo role and privacy.",
+    "appearance": "Appearance",
+    "language": "Language",
+    "themeLabel": "Theme",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "accentLabel": "Accent colour",
+    "accent": {
+      "teal": "Teal",
+      "blue": "Blue",
+      "violet": "Violet",
+      "rose": "Rose"
+    },
+    "densityLabel": "Density",
+    "density": {
+      "comfortable": "Comfortable",
+      "compact": "Compact"
+    },
+    "demo": "Privacy",
+    "k": "Privacy threshold k = {{k}}",
+    "kHint": "Groups with fewer than k students are hidden."
+  },
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Subjective wellbeing of university students",
+    "user": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "signing": "Signing in…",
+    "show": "Show password",
+    "hide": "Hide password",
+    "demoTitle": "Demo accounts (click to fill in)",
+    "roleBienestar": "Wellbeing",
+    "roleStudent": "Student",
+    "role": {
+      "bienestar": "Wellbeing",
+      "estudiante": "Student"
+    }
+  },
+  "auth": {
+    "logout": "Sign out",
+    "account": "Account",
+    "signedAs": "Signed in as",
+    "menu": "{{name}} menu"
+  }
+}

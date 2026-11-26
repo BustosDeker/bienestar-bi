@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F9D8A" />
+    <meta name="description" content="Seguimiento del bienestar subjetivo de estudiantes universitarios (BI)" />
+    <title>Bienestar · BI</title>
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem('bienestar-ui') || '{}').state || {};
+        var dark = s.theme === 'dark' || ((!s.theme || s.theme === 'system') && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"><div style="display:flex;min-height:100vh;align-items:center;justify-content:center;font:600 18px system-ui;color:#78716c">Bienestar</div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

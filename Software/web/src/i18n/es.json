@@ -1,0 +1,446 @@
+{
+  "app": {
+    "name": "Bienestar"
+  },
+  "nav": {
+    "main": "Navegación principal",
+    "overview": "Resumen",
+    "reports": "Reportes",
+    "explorer": "Explorador",
+    "drivers": "Drivers",
+    "student": "Mi bienestar",
+    "coach": "Coach de IA",
+    "etl": "ETL y calidad",
+    "settings": "Ajustes",
+    "more": "Más",
+    "collapse": "Contraer",
+    "expand": "Expandir"
+  },
+  "common": {
+    "female": "Mujer",
+    "male": "Hombre",
+    "wave": "Ola",
+    "week": "Semana",
+    "loading": "Cargando",
+    "retry": "Reintentar",
+    "close": "Cerrar",
+    "apply": "Aplicar",
+    "copy": "Copiar",
+    "copied": "Copiado al portapapeles",
+    "export": "Exportar",
+    "remove": "Quitar",
+    "skip": "Saltar al contenido",
+    "noData": "Sin datos para esta selección",
+    "noDataHint": "Prueba quitando algún filtro o reduciendo el valor de k en Ajustes.",
+    "back": "Atrás",
+    "next": "Siguiente"
+  },
+  "error": {
+    "offline": "No se pudo conectar con la API. Revisa que el servidor esté en marcha."
+  },
+  "demo": {
+    "banner": "Modo demostración: la API no responde y se muestran datos de ejemplo guardados (sin filtros)."
+  },
+  "estado": {
+    "bueno": "Bueno",
+    "regular": "Regular",
+    "malo": "Malo"
+  },
+  "filters": {
+    "title": "Filtros",
+    "faculty": "Facultad",
+    "school": "Escuela",
+    "sex": "Sexo",
+    "age": "Rango de edad",
+    "wave": "Ola",
+    "reset": "Limpiar",
+    "kHint": "Los grupos con menos de {{k}} estudiantes se ocultan"
+  },
+  "privacy": {
+    "suppressed": "Grupo con menos de k estudiantes: valor oculto por privacidad",
+    "hint": "Reduce k en Ajustes o amplía la selección para ver este resultado."
+  },
+  "chart": {
+    "showTable": "Ver tabla de datos",
+    "hideTable": "Ocultar tabla"
+  },
+  "palette": {
+    "title": "Paleta de comandos",
+    "placeholder": "Buscar página o acción…",
+    "empty": "Sin resultados",
+    "go": "Ir a",
+    "actions": "Acciones",
+    "theme": "Cambiar tema claro/oscuro",
+    "lang": "Cambiar idioma ES/EN",
+    "shortcuts": "Atajos de teclado",
+    "search": "Buscar",
+    "focus": "Ir al buscador"
+  },
+  "overview": {
+    "greeting": "Resumen ejecutivo",
+    "kpis": "Indicadores clave",
+    "evolution": "Evolución de la satisfacción con la vida (SWLS)",
+    "evolutionHint": "Promedio por ola de medición, con las líneas de los umbrales del semáforo.",
+    "findings": "Hallazgos",
+    "noFindings": "Aún no hay hallazgos para esta selección",
+    "heat": "Mapa de calor: escuela × ola",
+    "heatHint": "Promedio SWLS; el color sigue el semáforo del KPI-01.",
+    "bars": "Horas semanales significativas por tipo de vínculo",
+    "barsHint": "Horas por estudiante con valoración 4 o 5.",
+    "recs": "Recomendaciones de IA",
+    "wave": {
+      "abierta": "Ola {{n}} abierta ({{from}} → {{to}}) · periodo {{period}}",
+      "proxima": "Próxima: ola {{n}} del {{from}} al {{to}} · periodo {{period}}",
+      "cerrada": "Última ola: {{n}} · periodo {{period}}"
+    }
+  },
+  "findings": {
+    "kpiBad": "{{id}} ({{name}}) está en rojo.",
+    "lowSchool": "{{school}} tiene el SWLS más bajo ({{value}}, nivel {{state}}).",
+    "highSchool": "{{school}} tiene el SWLS más alto ({{value}}, nivel {{state}}).",
+    "trend": "En {{school}}, el SWLS cambió {{delta}} entre la primera y la última ola."
+  },
+  "kpi": {
+    "KPI-01": "Satisfacción con la vida",
+    "KPI-02": "Interacción social significativa",
+    "KPI-03": "Calidad relacional",
+    "KPI-04": "Actividad física semanal",
+    "unit1": "pts (5–35)",
+    "unit2": "h/semana",
+    "unit3": "de 5",
+    "unit4": "días/semana",
+    "group": "Grupo",
+    "value": "Valor",
+    "vsPrev": "vs. medición anterior",
+    "target": "Meta",
+    "sparkLabel": "Evolución de {{id}}"
+  },
+  "reports": {
+    "subtitle": "Los 7 reportes de gestión del diseño, con datos reales del Data Mart.",
+    "total": "Total",
+    "subtotal": "Subtotal facultad",
+    "totalWeekly": "Total semanal",
+    "blockRating": "Valoración (1–5)",
+    "blockIntensity": "Minutos por intensidad",
+    "cycle": "Ciclo",
+    "validated": "Validado contra el diseño del informe",
+    "validatedHint": "Se compara la estructura (columnas) con el diseño, no las cifras.",
+    "legend": "Las celdas con semáforo usan los umbrales de CONFIG_KPI. Los totales son promedios ponderados por n de estudiantes. Clic en una fila para resaltarla.",
+    "r1": {
+      "short": "SWLS por escuela",
+      "title": "SWLS por escuela y rango de edad",
+      "desc": "Promedio de satisfacción con la vida, con subtotales por facultad y total general."
+    },
+    "r2": {
+      "short": "Horas por vínculo",
+      "title": "Horas significativas por vínculo y modalidad × rango de edad",
+      "desc": "Horas semanales por estudiante con valoración 4 o 5; la fila final suma el total semanal."
+    },
+    "r3": {
+      "short": "Actividad",
+      "title": "Días de actividad física y autocuidado × rango de edad",
+      "desc": "Días distintos por semana, con 0 en las semanas sin actividad."
+    },
+    "r4": {
+      "short": "Evolución",
+      "title": "Evolución del SWLS por ola",
+      "desc": "Promedio por ola, variación frente a la ola anterior (LAG) y estado del semáforo."
+    },
+    "r5": {
+      "short": "Por sexo",
+      "title": "Valoración e intensidad por sexo",
+      "desc": "Valoración de interacciones por vínculo y minutos de actividad por intensidad."
+    },
+    "r6": {
+      "short": "Semanal",
+      "title": "Seguimiento semanal por mes",
+      "desc": "Horas, valoración y días de actividad física por semana."
+    },
+    "r7": {
+      "short": "Ciclo e ingreso",
+      "title": "SWLS por ciclo de estudios y rango de ingreso",
+      "desc": "Promedio de satisfacción por ciclo y rango de ingreso (incluye «No informa»)."
+    }
+  },
+  "col": {
+    "Facultad": "Facultad",
+    "Escuela": "Escuela",
+    "RangoEdad": "Rango de edad",
+    "Estudiantes": "Estudiantes",
+    "OlaMedicion": "Ola",
+    "Variacion": "Variación",
+    "Estado": "Estado",
+    "Mes": "Mes",
+    "Semana": "Semana",
+    "InicioSemana": "Inicio de semana",
+    "HorasPorEstudiante": "Horas/estudiante",
+    "Valoracion": "Valoración",
+    "DiasActividadFisica": "Días act. física",
+    "Bloque": "Bloque",
+    "Grupo": "Grupo",
+    "TipoVinculo": "Vínculo",
+    "Modalidad": "Modalidad",
+    "TipoActividad": "Tipo de actividad",
+    "CicloEstudios": "Ciclo"
+  },
+  "explorer": {
+    "subtitle": "Elige una medida, arrastra dimensiones a filas y columnas, aplica segmentadores y haz clic en un gráfico para filtrar de forma cruzada.",
+    "fields": "Campos",
+    "measureLabel": "Medida",
+    "dimensions": "Dimensiones (arrastra o usa ↓ →)",
+    "rows": "Filas",
+    "cols": "Columnas",
+    "dropHere": "Suelta aquí",
+    "toRows": "A filas",
+    "toCols": "A columnas",
+    "chartType": "Tipo de gráfico",
+    "savedViews": "Vistas guardadas",
+    "slicers": "Segmentadores",
+    "addSlicer": "Agregar segmentador",
+    "noSlicers": "Sin segmentadores activos.",
+    "drillUp": "Subir nivel",
+    "drillDown": "Bajar nivel",
+    "cross": "Filtro cruzado",
+    "noDeeper": "No hay un nivel más profundo en esta jerarquía.",
+    "emptyTitle": "Arrastra una dimensión a Filas o Columnas",
+    "emptyHint": "Empieza con Escuela en filas y Ola en columnas.",
+    "clickHint": "Clic en una barra = filtro cruzado. Facultad→Escuela y Año→Mes→Semana→Día permiten bajar de nivel.",
+    "secondary": "Vista vinculada por {{dim}}",
+    "warning": "Las comparaciones son descriptivas: correlación no es causalidad.",
+    "share": "Copiar enlace",
+    "save": "Guardar vista",
+    "saveName": "Nombre de la vista",
+    "saved": "Vista guardada en este navegador",
+    "linkCopied": "Enlace copiado: reproduce esta vista",
+    "chart": {
+      "bar": "Barras",
+      "line": "Líneas",
+      "heat": "Mapa de calor",
+      "table": "Tabla"
+    },
+    "measure": {
+      "PuntajeSWLS": "Puntaje SWLS (promedio)",
+      "HorasSignificativas": "Horas significativas por estudiante y semana",
+      "ValoracionInteraccion": "Valoración de interacción (1–5)",
+      "MinutosActividad": "Minutos de actividad por estudiante y semana",
+      "DiasActividad": "Días con actividad por estudiante y semana",
+      "VariacionPuntajeSWLS": "Variación del puntaje SWLS"
+    },
+    "dim": {
+      "Facultad": "Facultad",
+      "Escuela": "Escuela",
+      "RangoEdad": "Rango de edad",
+      "Sexo": "Sexo",
+      "CicloEstudios": "Ciclo de estudios",
+      "RangoIngreso": "Rango de ingreso",
+      "Anual": "Año",
+      "Mes": "Mes",
+      "Semana": "Semana",
+      "Dia": "Día",
+      "OlaMedicion": "Ola de medición",
+      "PeriodoAcademico": "Periodo académico",
+      "TipoVinculo": "Tipo de vínculo",
+      "Modalidad": "Modalidad",
+      "TipoActividad": "Tipo de actividad",
+      "Intensidad": "Intensidad",
+      "Actividad": "Actividad",
+      "Bloque": "Bloque",
+      "Grupo": "Grupo"
+    }
+  },
+  "drivers": {
+    "title": "¿Qué genera los picos de bienestar?",
+    "subtitle": "Qué vínculos y actividades se asocian con mayor satisfacción con la vida. Análisis descriptivo, no predictivo.",
+    "warnTitle": "Asociación no es causalidad.",
+    "warn": "Estos resultados describen relaciones entre variables en esta muestra; no demuestran que un vínculo o actividad cause más bienestar.",
+    "bonds": "Vínculos",
+    "activities": "Actividades",
+    "rankHint": "Diferencia de SWLS entre el grupo de estudiantes con más y con menos dedicación.",
+    "group": "Grupo",
+    "diff": "Δ SWLS (alta vs. baja dedicación)",
+    "rating": "Valoración",
+    "hoursWeek": "Horas/semana",
+    "minWeek": "Min/semana",
+    "swlsChange": "Δ SWLS 1ª→última ola",
+    "matrix": "Matriz de correlación (Spearman)",
+    "matrixHint": "ρ de Spearman a nivel estudiante (n = {{n}}).",
+    "scatter": "Horas significativas vs. SWLS",
+    "scatterHint": "Cada punto es un estudiante (sin identificar).",
+    "short": {
+      "HorasSignificativas": "Horas signif.",
+      "ValoracionInteraccion": "Valoración",
+      "DiasActividad": "Días act.",
+      "MinutosActividad": "Min. act.",
+      "PuntajeSWLS": "SWLS",
+      "VariacionPuntajeSWLS": "Δ SWLS"
+    }
+  },
+  "student": {
+    "title": "Mi bienestar",
+    "subtitle": "Responde la encuesta, registra interacciones y actividad, y compara tu perfil con el promedio anónimo del grupo.",
+    "tab": {
+      "resumen": "Resumen",
+      "encuesta": "Encuesta SWLS",
+      "interaccion": "Interacción",
+      "actividad": "Actividad",
+      "coach": "Mi coach"
+    },
+    "radar": "Tu perfil vs. el grupo",
+    "radarHint": "Cada eje es el % de la meta «bueno» de cada indicador.",
+    "afterEtl": "Los valores del radar se actualizan al ejecutar el ETL.",
+    "you": "Tú",
+    "group": "Grupo (anónimo)",
+    "timeline": "Tu línea de tiempo (SWLS)",
+    "streak_one": "Racha: {{count}} día",
+    "streak_other": "Racha: {{count}} días",
+    "lastDay": "Último día con actividad: {{date}}",
+    "noActivity": "Aún sin actividad registrada",
+    "recent": "Registros recientes",
+    "noRecords": "Sin registros todavía",
+    "under10": "no cuenta: < 10 min",
+    "surveyTitle": "Encuesta de satisfacción con la vida (SWLS)",
+    "pickWave": "Ola a responder",
+    "surveyDate": "Fecha de aplicación: {{date}} (ola {{n}})",
+    "step": "Pregunta {{n}} de 5",
+    "disagree": "Muy en desacuerdo",
+    "agree": "Muy de acuerdo",
+    "submit": "Enviar encuesta",
+    "mustAnswer": "Mueve el control en cada pregunta antes de enviar.",
+    "surveyOk": "Encuesta registrada: {{score}}/35 en la ola {{n}}",
+    "allDone": "Ya respondiste todas las olas",
+    "allDoneHint": "Elige otro estudiante de demostración para registrar una encuesta.",
+    "interTitle": "Registro rápido de interacción",
+    "bond": "Vínculo",
+    "modality": "Modalidad",
+    "hours": "Duración (horas)",
+    "hoursErr": "Entre 0 y 24 horas",
+    "rating": "Valoración (1–5)",
+    "date": "Fecha",
+    "save": "Guardar",
+    "saved": "Registro guardado",
+    "savedShort": "Guardado (no cuenta para el KPI: menos de 10 min)",
+    "interHint": "Solo las interacciones con valoración 4 o 5 suman horas significativas.",
+    "actTitle": "Registro rápido de actividad",
+    "activity": "Actividad",
+    "minutes": "Minutos",
+    "minutesErr": "Entre 1 y 600 minutos",
+    "actHint": "Solo cuentan las actividades de 10 minutos o más.",
+    "coachTitle": "Tu coach de bienestar",
+    "coachHint": "Interpreta tus indicadores personales; no es un diagnóstico.",
+    "code": "Código"
+  },
+  "swls": {
+    "1": "En la mayoría de los aspectos, mi vida se acerca a mi ideal.",
+    "2": "Las condiciones de mi vida son excelentes.",
+    "3": "Estoy satisfecho con mi vida.",
+    "4": "Hasta ahora he conseguido las cosas importantes que quiero en la vida.",
+    "5": "Si pudiera vivir mi vida de nuevo, no cambiaría casi nada."
+  },
+  "coach": {
+    "title": "Coach de IA",
+    "subtitle": "La IA solo interpreta los valores y estados de los indicadores y redacta recomendaciones prácticas. No predice ni diagnostica.",
+    "inputs": "Indicadores enviados",
+    "inputsHint": "Solo se envían valores agregados y su estado; nunca datos personales.",
+    "outputs": "Recomendaciones",
+    "interpret": "Interpretar indicadores",
+    "emptyTitle": "Aún no hay recomendaciones",
+    "emptyHint": "Pulsa «Interpretar indicadores» para generarlas.",
+    "general": "General",
+    "source": "Fuente",
+    "rules": "Motor de reglas (local)",
+    "fallback": "Bedrock no respondió; se usó el motor de reglas",
+    "disclaimer": "Recomendaciones orientativas basadas en asociaciones; no reemplazan la atención profesional. Si te sientes mal, acude a la oficina de bienestar estudiantil."
+  },
+  "etl": {
+    "title": "Centro de ETL y calidad de datos",
+    "subtitle": "Ejecuta la carga OLTP → Data Mart, revisa su auditoría y las reglas de calidad.",
+    "run": "Ejecutar ETL",
+    "running": "Ejecutando…",
+    "lastRun": "Última ejecución",
+    "noRun": "Aún no ejecutaste el ETL en esta sesión",
+    "noRunHint": "Pulsa «Ejecutar ETL»: se cargan primero las dimensiones y luego los hechos.",
+    "ok": "ETL completado",
+    "fail": "El ETL terminó con errores",
+    "dq": "Reglas de calidad",
+    "dqHint": "Incumplimientos detectados en el OLTP. Algunos se rechazan al cargar los hechos.",
+    "history": "Historial (AUDITORIA_ETL)",
+    "noHistory": "Sin ejecuciones registradas",
+    "lineage": "Linaje: OLTP → ETL → Data Mart",
+    "lineageHint": "Haz clic en un nodo para ver de dónde viene y a dónde va.",
+    "views": "Vistas",
+    "from": "Origen",
+    "to": "Destino",
+    "upstream": "Alimenta desde",
+    "downstream": "Alimenta a",
+    "col": {
+      "step": "Paso",
+      "read": "Leídas",
+      "inserted": "Insertadas",
+      "rejected": "Rechazadas",
+      "duration": "Duración",
+      "status": "Estado",
+      "start": "Inicio"
+    }
+  },
+  "dq": {
+    "swls_5_respuestas": "Encuestas SWLS con las 5 respuestas",
+    "fecha_dentro_de_ola": "Fecha de encuesta dentro de una ola",
+    "valoracion_1_a_5": "Valoración entre 1 y 5",
+    "valor_swls_1_a_7": "Respuesta SWLS entre 1 y 7",
+    "duracion_interaccion_valida": "Duración de interacción válida (0–24 h)",
+    "duracion_actividad_valida": "Duración de actividad válida (1–600 min)",
+    "actividad_minimo_10_min": "Actividad de al menos 10 minutos",
+    "interaccion_atipica_8h": "Interacciones atípicas (más de 8 h)",
+    "ingreso_informado": "Rango de ingreso informado"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Idioma, apariencia, rol de demostración y privacidad.",
+    "appearance": "Apariencia",
+    "language": "Idioma",
+    "themeLabel": "Tema",
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "accentLabel": "Color de acento",
+    "accent": {
+      "teal": "Verde azulado",
+      "blue": "Azul",
+      "violet": "Violeta",
+      "rose": "Rosa"
+    },
+    "densityLabel": "Densidad",
+    "density": {
+      "comfortable": "Cómoda",
+      "compact": "Compacta"
+    },
+    "demo": "Privacidad",
+    "k": "Umbral de privacidad k = {{k}}",
+    "kHint": "Se ocultan los grupos con menos de k estudiantes."
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "subtitle": "Bienestar subjetivo de estudiantes universitarios",
+    "user": "Usuario",
+    "password": "Contraseña",
+    "submit": "Ingresar",
+    "signing": "Ingresando…",
+    "show": "Mostrar contraseña",
+    "hide": "Ocultar contraseña",
+    "demoTitle": "Cuentas de demostración (clic para rellenar)",
+    "roleBienestar": "Bienestar",
+    "roleStudent": "Estudiante",
+    "role": {
+      "bienestar": "Bienestar",
+      "estudiante": "Estudiante"
+    }
+  },
+  "auth": {
+    "logout": "Cerrar sesión",
+    "account": "Cuenta",
+    "signedAs": "Sesión iniciada como",
+    "menu": "Menú de {{name}}"
+  }
+}
